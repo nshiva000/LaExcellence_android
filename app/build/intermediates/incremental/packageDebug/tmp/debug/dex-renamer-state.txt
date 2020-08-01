@@ -1,0 +1,4 @@
+#Wed May 01 17:52:11 IST 2019
+base.0=/Users/shiva/AndroidStudioProjects/LaExcellence/app/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "907507965015",
+    "firebase_url": "https://laextestseries.firebaseio.com",
+    "project_id": "laextestseries",
+    "storage_bucket": "laextestseries.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907507965015:android:9da7a8b71a0606e0",
+        "android_client_info": {
+          "package_name": "com.gmail.hyd.laexcellence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907507965015-bk26kapd12naku6c9p0cviea11ij61qt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gmail.hyd.laexcellence",
+            "certificate_hash": "64479384018b928fa39ca46a78ff66b2934c7cb8"
+          }
+        },
+        {
+          "client_id": "907507965015-abn6a5k2v3vkq080lm285v386q1qpg65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4086oglM82YX8MpL5K_VulmYTR-iYZEQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907507965015-abn6a5k2v3vkq080lm285v386q1qpg65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

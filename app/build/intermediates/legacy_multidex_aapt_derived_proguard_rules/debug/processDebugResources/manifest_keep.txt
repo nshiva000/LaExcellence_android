@@ -1,0 +1,4 @@
+# Referenced at /Users/shiva/AndroidStudioProjects/LaExcellence/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:27
+-keep class android.support.multidex.MultiDexApplication { <init>(); }
+# Referenced at /Users/shiva/AndroidStudioProjects/LaExcellence/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:27
+-keep class android.support.v4.app.CoreComponentFactory { <init>(); }

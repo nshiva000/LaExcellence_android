@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.Exam">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/white"
+            app:theme="@style/ToolbarTheme" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/p_qid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="@color/mark"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/preview_marks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dp"
+                        android:text="Marks" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="@color/red"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dp"
+                        android:text="Report" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="@color/mark"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/correct_rank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dp"
+                        android:text="Rank" />
+
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingRight="5dp"
+                            android:layout_weight="1">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:text="Q.No. " />
+
+                                <TextView
+                                    android:id="@+id/preview_qid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/text"
+                                    android:textStyle="bold"
+                                    android:text="1 : " />
+
+                            </LinearLayout>
+
+
+                            <TextView
+                            android:id="@+id/preview_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text"
+                            android:textStyle="bold"
+                            />
+
+
+                            <!--<WebView-->
+                                <!--android:id="@+id/preview_question"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"></WebView>-->
+
+
+                            <TextView
+                                android:id="@+id/preview_a"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/option"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:id="@+id/preview_b"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/option"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:id="@+id/preview_c"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/option"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:id="@+id/preview_d"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/option"
+                                android:layout_marginBottom="20dp" />
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                app:cardBackgroundColor="#eceff5"
+                                android:layout_marginBottom="10dp"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+
+                                        <android.support.v7.widget.CardView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_margin="5dp"
+                                            android:layout_marginRight="10dp"
+                                            app:cardBackgroundColor="@color/colorPrimary"
+                                            android:padding="5dp">
+
+                                            <TextView
+                                                android:id="@+id/preview_ans"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:layout_margin="5dp"
+                                                android:text="Question" />
+
+
+                                        </android.support.v7.widget.CardView>
+
+
+                                        <android.support.v7.widget.CardView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_margin="5dp"
+                                            android:layout_marginRight="10dp"
+                                            app:cardBackgroundColor="@color/green"
+                                            android:padding="5dp">
+
+                                            <TextView
+                                                android:id="@+id/correct_ans"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:layout_margin="5dp" />
+
+
+                                        </android.support.v7.widget.CardView>
+                                    </RelativeLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:padding="5dp">
+
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:textColor="@color/text"
+                                                android:textSize="18sp"
+                                                android:text="Explanation" />
+
+
+                                            <android.support.v7.widget.CardView
+                                                android:id="@+id/doubt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_margin="5dp"
+                                                android:layout_marginRight="10dp"
+                                                app:cardBackgroundColor="@color/red"
+                                                android:padding="5dp">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:textColor="@color/white"
+                                                    android:layout_margin="5dp"
+                                                    android:text="Ask Doubt" />
+
+
+                                            </android.support.v7.widget.CardView>
+
+
+                                        </RelativeLayout>
+
+                                        <android.support.v7.widget.CardView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:id="@+id/preview_explanation"
+                                                android:layout_width="match_parent"
+                                                android:layout_margin="10dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="Question"/>
+                                        </android.support.v7.widget.CardView>
+
+
+
+
+                                        <!--<WebView-->
+                                            <!--android:id="@+id/preview_explanation"-->
+                                            <!--android:layout_width="match_parent"-->
+                                            <!--android:layout_height="wrap_content"-->
+                                            <!--tools:ignore="WebViewLayout" />-->
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0">
+
+                <Button
+                    android:id="@+id/btn_previous"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/previes"
+                    android:layout_gravity="start" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
